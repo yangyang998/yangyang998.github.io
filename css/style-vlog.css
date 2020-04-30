@@ -1,0 +1,79 @@
+html, body {
+    width: 100%;
+  }
+  ul li {
+    list-style: none;
+  }
+  *{margin:0;padding:0;}
+  #box {
+    width: 1200px;
+    margin: 20px auto;
+  }
+  .slide {
+    height: 500px;
+    position: relative;
+  }
+  .slide ul {
+    height: 100%;
+  }
+  .slide li {
+    position: absolute;
+    left:200px;
+    top:0;
+  }
+  .slide li img{
+    width: 100%;
+  }
+  .arraw {
+    opacity: 0;
+  }
+  .arraw a {
+    width: 70px;
+    height: 110px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -55px;
+    z-index: 999;
+  }
+  .next {
+    background: url(/img/life/2020a/right.png) no-repeat;
+    right: -10px;
+    /*opacity: .5;*/
+    /*filter: alpha(opacity=50);*/
+  }
+  .prev {
+    background: url(/img/life/2020a/left.png) no-repeat;
+    left: -10px;
+  }
+  .nav{
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  .a1{
+    text-decoration:none;
+  }
+  .pp{
+    color: #fff;
+    size: 20px;
+    font-weight: bold;
+  }
+  .bgi{
+    background-image: url('/img/index/backgrond-01.jpg');
+  }
+
+audio{
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.1;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+
+audio:hover{
+    opacity: 1;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Books on YangYang</title>
+    <link>https://yangyang998.github.io/books/</link>
+    <description>Recent content in Books on YangYang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://yangyang998.github.io/books/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>books</title>
+      <link>https://yangyang998.github.io/books/books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yangyang998.github.io/books/books/</guid>
+      <description>SQL语句大全大全 Linux从入门到精通 本书分三部分，第一部分为入门篇，全面深入的介绍了Red Had Linux 的安装，Linux系统的基本配置以及Lin</description>
+    </item>
+    
+  </channel>
+</rss>
