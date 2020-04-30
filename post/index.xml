@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on YangYang</title>
+    <link>https://yangyang998.github.io/post/</link>
+    <description>Recent content in Posts on YangYang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yangyang998.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>不同服务器数据库之间的数据操作</title>
+      <link>https://yangyang998.github.io/post/2020-04-24-%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yangyang998.github.io/post/2020-04-24-%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/</guid>
+      <description>创建夸服务器链接 创建链接 exec sp_addlinkedserver &amp;#39;ITSV&amp;#39;, &amp;#39;&amp;#39;, &amp;#39;SQLOLEDB&amp;#39;, &amp;#39;远程服务器名或ip地址&amp;#39; exec sp_addlinkedsrvlogin &amp;#39;ITSV&amp;#39;, &amp;#39;false&amp;#39;,null, &amp;#39;用户名&amp;#39;, &amp;#39;密码&amp;#39; 查询</description>
+    </item>
+    
+    <item>
+      <title>自定义报表 笔记</title>
+      <link>https://yangyang998.github.io/post/2020-04-07-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8A%A5%E8%A1%A8/</link>
+      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yangyang998.github.io/post/2020-04-07-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8A%A5%E8%A1%A8/</guid>
+      <description>启天医星自定义报表 通过DialogPage来添加条件如图： 选择我们需要的条件选项框来添加到DialogPage框中 如图： 选择条件选项框添加属</description>
+    </item>
+    
+    <item>
+      <title>hugo搭建博客笔记</title>
+      <link>https://yangyang998.github.io/post/2020-01-10-hugo/</link>
+      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yangyang998.github.io/post/2020-01-10-hugo/</guid>
+      <description>搭建个人博客 1.准备工作 一.下载git工具：https://git-scm.com/downloads 二.下载hugo静态网站生成器：htt</description>
+    </item>
+    
+    <item>
+      <title>mysql tomcat java环境配置</title>
+      <link>https://yangyang998.github.io/post/2020-02-11-mtj/</link>
+      <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yangyang998.github.io/post/2020-02-11-mtj/</guid>
+      <description>1.搭建jdk8环境 部署jdk8解压缩jdk8压缩包到自定义【mysoft】文件夹 配置java 的环境变量在 计算机===&amp;gt;属性===&amp;g</description>
+    </item>
+    
+    <item>
+      <title>SpringBoot 笔记</title>
+      <link>https://yangyang998.github.io/post/2020-03-13-springboot/</link>
+      <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yangyang998.github.io/post/2020-03-13-springboot/</guid>
+      <description>SpringBoot 笔记 1.使用 Idea 搭建SpringBoot 2.目录结构 1.java目录中存放java代码 2.resource目录存放前段页面，配置文件，css</description>
+    </item>
+    
+  </channel>
+</rss>

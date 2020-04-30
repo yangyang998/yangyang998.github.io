@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="books" />
-    <meta property="og:title" content="books" />
-    <meta property="twitter:title" content="books" />
+    <meta name="title" content="不同服务器数据库之间的数据操作" />
+    <meta property="og:title" content="不同服务器数据库之间的数据操作" />
+    <meta property="twitter:title" content="不同服务器数据库之间的数据操作" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="&#39;乐天派&#39;">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>books-blog</title>
+    <title>不同服务器数据库之间的数据操作-blog</title>
 
-    <link rel="canonical" href="/books/books/">
+    <link rel="canonical" href="/post/2020-04-24-%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -147,7 +147,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/img/index/header02bg.jpg')
+        background-image: url('/img/index/header03bg.jpg')
     }
 </style>
 <header class="intro-header">
@@ -157,8 +157,12 @@
                 <div class="post-heading">
                     <div class="tags">
                         
+                        <a class="tag" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" title="学习笔记">
+                            学习笔记
+                        </a>
+                        
                     </div>
-                    <h1>books</h1>
+                    <h1>不同服务器数据库之间的数据操作</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         Posted by 
@@ -166,7 +170,7 @@
                                 YangYang
                          
                         on 
-                        Monday, January 1, 0001
+                        Friday, April 24, 2020
                         
                         
                         
@@ -198,50 +202,70 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#sql语句大全大全databookssql语句大全大全pdf"><a href="/data/books/SQL%E8%AF%AD%E5%8F%A5%E5%A4%A7%E5%85%A8%E5%A4%A7%E5%85%A8.pdf">SQL语句大全大全</a></a></li>
-        <li><a href="#linux从入门到精通databookslinux从入门到精通pdf"><a href="/data/books/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A.pdf">Linux从入门到精通</a></a></li>
-        <li><a href="#oracle-从入门到精通databooksoracle从入门到精通pdf"><a href="/data/books/Oracle%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A.pdf">Oracle 从入门到精通</a></a></li>
-        <li><a href="#计算机网络基础databooks计算机网络基础pdf"><a href="/data/books/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80.pdf">计算机网络基础</a></a></li>
+        <li><a href="#创建夸服务器链接">创建夸服务器链接</a></li>
+        <li><a href="#链接mysql服务器">链接MYSQL服务器</a></li>
+        <li><a href="#oracle链接">Oracle链接</a></li>
       </ul>
     </li>
   </ul>
 </nav>
                 
-                <h2 id="sql语句大全大全databookssql语句大全大全pdf"><a href="/data/books/SQL%E8%AF%AD%E5%8F%A5%E5%A4%A7%E5%85%A8%E5%A4%A7%E5%85%A8.pdf">SQL语句大全大全</a></h2>
-<hr>
-<h2 id="linux从入门到精通databookslinux从入门到精通pdf"><a href="/data/books/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A.pdf">Linux从入门到精通</a></h2>
+                <h2 id="创建夸服务器链接">创建夸服务器链接</h2>
 <ul>
-<li>本书分三部分，第一部分为入门篇，全面深入的介绍了Red Had Linux 的安装，Linux系统的基本配置以及Linux的使用基础；第二部分为进阶篇，剖析了Linux文件系统的目录下的电子邮件的收发，文件的上传与下载等；第三部分是高级篇，主要阐述控制面板的基础操作，Linux的系统管理，各类网络服务器的设置，RPM与Glint的使用，用Linux建立和配置TCP/IP网络等。除此以外，还为拥挤提供了常见问题解答和防火墙与安全技术。<br>
-本书是Linux初学者，Linux初级使用以及开发人员，学校教师和学生学习和参考的理想读物。</li>
+<li>创建链接
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"> <span style="color:#ff79c6">exec</span> sp_addlinkedserver   <span style="color:#f1fa8c">&#39;ITSV&#39;</span>, <span style="color:#f1fa8c">&#39;&#39;</span>, <span style="color:#f1fa8c">&#39;SQLOLEDB&#39;</span>, <span style="color:#f1fa8c">&#39;远程服务器名或ip地址&#39;</span>
+
+ <span style="color:#ff79c6">exec</span> sp_addlinkedsrvlogin <span style="color:#f1fa8c">&#39;ITSV&#39;</span>, <span style="color:#f1fa8c">&#39;false&#39;</span>,<span style="color:#ff79c6">null</span>, <span style="color:#f1fa8c">&#39;用户名&#39;</span>, <span style="color:#f1fa8c">&#39;密码&#39;</span>
+</code></pre></div></li>
+<li>查询示例
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"> <span style="color:#ff79c6">select</span> <span style="color:#ff79c6">*</span> <span style="color:#ff79c6">from</span> ITSV.数据库名.dbo.表名   
+</code></pre></div></li>
+<li>导入示例
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"> <span style="color:#ff79c6">select</span> <span style="color:#ff79c6">*</span> <span style="color:#ff79c6">into</span> 表 <span style="color:#ff79c6">from</span> ITSV.数据库名.dbo.表名
+</code></pre></div></li>
+<li>删除链接服务器
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"> <span style="color:#ff79c6">exec</span> sp_dropserver <span style="color:#f1fa8c">&#39;ITSV &#39;</span>, <span style="color:#f1fa8c">&#39;droplogins&#39;</span>  
+</code></pre></div></li>
 </ul>
-<hr>
-<h2 id="oracle-从入门到精通databooksoracle从入门到精通pdf"><a href="/data/books/Oracle%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A.pdf">Oracle 从入门到精通</a></h2>
+<h2 id="链接mysql服务器">链接MYSQL服务器</h2>
 <ul>
-<li>Oracle数据库系统是数据库领域最优秀的数据库之一，本书以Oracle最新版本Oracle llg
-为蓝本，系统地讲述了Oracle数据库的概念、管理和应用开发等内容。
-本书面向数据库管理人员和数据库开发人员，从实际角度出发，系统地介绍了数据库和
-Oracle的相关概念和原理、Oracle的数据库管理（如安装与启动，用户权限、备份与恢复等)，
-以及Oracle的应用开发基础，并通过两个完整案例来介绍基于Java开发包和Oracle 数据库
-进行案例开发的详细过程。对于初学者，本书是一本很好的入门教程，对Oracle管理员和应
-用程序开发员，也有很好的学习和参考价值。
-全书结构合理、内容翔实、示例丰蓄、语言简洁，不仅适合作为高等院校本/专科计算
-机软件、信息系统、电子商务等相关专业的数据库课程教材，同时还适合作为各种数据库技
-术培训班的教材以及数据库开发人员的参考资料。</li>
+<li>@datasrc,ODBC的DSN名称
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql">  <span style="color:#ff79c6">EXEC</span> sp_addlinkedserver <span style="color:#ff79c6">@</span>server <span style="color:#ff79c6">=</span> N<span style="color:#f1fa8c">&#39;MYSQLSERVER&#39;</span>, <span style="color:#ff79c6">@</span>srvproduct<span style="color:#ff79c6">=</span>N<span style="color:#f1fa8c">&#39;MySqlOdbc&#39;</span>, <span style="color:#ff79c6">@</span>provider<span style="color:#ff79c6">=</span>N<span style="color:#f1fa8c">&#39;MSDASQL&#39;</span>, <span style="color:#ff79c6">@</span>datasrc<span style="color:#ff79c6">=</span>N<span style="color:#f1fa8c">&#39;MySqlOdbc&#39;</span>
+
+  <span style="color:#ff79c6">EXEC</span> sp_addlinkedsrvlogin <span style="color:#ff79c6">@</span>rmtsrvname<span style="color:#ff79c6">=</span>N<span style="color:#f1fa8c">&#39;MYSQLSERVER&#39;</span>,<span style="color:#ff79c6">@</span>useself<span style="color:#ff79c6">=</span>N<span style="color:#f1fa8c">&#39;False&#39;</span>,<span style="color:#ff79c6">@</span>locallogin<span style="color:#ff79c6">=</span><span style="color:#ff79c6">NULL</span>,<span style="color:#ff79c6">@</span>rmtuser<span style="color:#ff79c6">=</span>N<span style="color:#f1fa8c">&#39;root&#39;</span>,<span style="color:#ff79c6">@</span>rmtpassword<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;qitian&#39;</span>
+</code></pre></div></li>
+<li>查询示例
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"> <span style="color:#ff79c6">select</span> <span style="color:#ff79c6">*</span> <span style="color:#ff79c6">from</span> openquery(MySQLSERVER,<span style="color:#f1fa8c">&#39;SELECT * FROM blsj_blood_events&#39;</span>)   
+</code></pre></div></li>
+<li>把SQL SERVER里的TT表的记录插入到MYSQL的T1表里，这这里也可以插入具体值。
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#ff79c6">INSERT</span> OPENQUERY(MySQLTest,<span style="color:#f1fa8c">&#39;select * from t1&#39;</span>) <span style="color:#ff79c6">select</span> <span style="color:#ff79c6">*</span> <span style="color:#ff79c6">from</span> TT;
+
+<span style="color:#ff79c6">INSERT</span> OPENQUERY(MySQLTest,<span style="color:#f1fa8c">&#39;select * from t1&#39;</span>) <span style="color:#ff79c6">values</span> (<span style="color:#bd93f9">99</span>,<span style="color:#bd93f9">99</span>,<span style="color:#bd93f9">99</span>);
+</code></pre></div></li>
+<li>对T1表进行UPDATE操作
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#ff79c6">UPDATE</span> OPENQUERY(MySQLTest,<span style="color:#f1fa8c">&#39;select value from t1&#39;</span>) <span style="color:#ff79c6">set</span> value<span style="color:#ff79c6">=</span>value <span style="color:#ff79c6">+</span><span style="color:#bd93f9">100</span>;  
+</code></pre></div></li>
+<li>对T1表进行DELETE 操作
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#ff79c6">DELETE</span> OPENQUERY (MySQLTest, <span style="color:#f1fa8c">&#39;SELECT * FROM t1 &#39;</span>);  
+</code></pre></div></li>
+<li>对T1表进行查询操作
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#ff79c6">select</span> <span style="color:#ff79c6">*</span> <span style="color:#ff79c6">from</span> openquery(MySQLTest,<span style="color:#f1fa8c">&#39;select * from t1&#39;</span>);   
+</code></pre></div></li>
+<li>把MYSQL的T1表的记录写回到MSSQL
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#ff79c6">insert</span> <span style="color:#ff79c6">into</span> TT <span style="color:#ff79c6">select</span> <span style="color:#ff79c6">*</span> <span style="color:#ff79c6">from</span> openquery(MySQLTest,<span style="color:#f1fa8c">&#39;select * from t1&#39;</span>);
+</code></pre></div></li>
+<li>释放掉链接服务
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#ff79c6">EXEC</span> sp_dropserver <span style="color:#f1fa8c">&#39;MySQLTest&#39;</span>,<span style="color:#f1fa8c">&#39;droplogins&#39;</span>  
+</code></pre></div></li>
 </ul>
-<hr>
-<h2 id="计算机网络基础databooks计算机网络基础pdf"><a href="/data/books/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80.pdf">计算机网络基础</a></h2>
+<h2 id="oracle链接">Oracle链接</h2>
 <ul>
-<li>本书自1989年首次出版以来，于1994年、1999年和2003年分别出了修订版。2006年8月本教材通
-过了教育部的评审，被纳入普通高等教育“十一五”国家级规划教材。《计算机网络》的第5版，在内容和
-结构方面都有了很大的修改。
-全书分为10章，比较全面系统地介绍了计算机网络的发展和原理体系结构、物理层、数据链路层、
-网络层、运输层、应用层、网络安全、因特网上的音频/视频服务、无线网络和下一代因特网等内容。各章
-均附有练习题。此外，附录A给出了部分习题的答案和提示。随书配套的光盘中，有全书课件和作者教学
-中经常遇到的150多个问题及解答，计算机网络最基本概念的演示(PowerPoint文件)，以及本书引用的全
-部RFC文档等，供读者参阅，
-本书的特点是概念准确、论述严谨、内容新颖、图文并茂。突出基本原理和基本概念的阐述，同时力
-图反映出计算机网络的一些最新发展。本书可供电气信息类和计算机类专业的大学本科生和研究生使用，
-对从事计算机网络工作的工程技术人员也有学习参考价值。</li>
+<li>创建链接
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql">  <span style="color:#ff79c6">EXEC</span> sp_addlinkedserver <span style="color:#f1fa8c">&#39;HISToSPT&#39;</span>, <span style="color:#f1fa8c">&#39;Oracle&#39;</span>, <span style="color:#f1fa8c">&#39;OraOLEDB.Oracle&#39;</span>, <span style="color:#f1fa8c">&#39;[ip地址：端口]/[数据库名]&#39;</span>
+</code></pre></div></li>
+<li>实现
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql">  <span style="color:#ff79c6">select</span> <span style="color:#ff79c6">*</span> <span style="color:#ff79c6">from</span> OPENQUERY (ORCR, <span style="color:#f1fa8c">&#39;select * from WORK_SHEET&#39;</span>)
+</code></pre></div></li>
 </ul>
 
 
@@ -249,6 +273,11 @@ Oracle的相关概念和原理、Oracle的数据库管理（如安装与启动�
 
                 <hr>
                 <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/2020-04-07-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8A%A5%E8%A1%A8/" data-toggle="tooltip" data-placement="top" title="自定义报表 笔记">&larr;
+                            Previous Post</a>
+                    </li>
                     
                     
                 </ul>

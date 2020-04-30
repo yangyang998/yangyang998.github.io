@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vlogs on YangYang</title>
+    <link>https://yangyang998.github.io/vlogs/</link>
+    <description>Recent content in Vlogs on YangYang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yangyang998.github.io/vlogs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>旅拍</title>
+      <link>https://yangyang998.github.io/vlogs/vlogs/</link>
+      <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yangyang998.github.io/vlogs/vlogs/</guid>
+      <description>2019年 10月 30日 《古观音禅寺》 陕西-长安区</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,6 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yangyang998.github.io/post/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yangyang998.github.io/tags/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yangyang998.github.io/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yangyang998.github.io/post/2020-04-24-%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yangyang998.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yangyang998.github.io/post/2020-04-07-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8A%A5%E8%A1%A8/</loc>
+    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yangyang998.github.io/post/2020-01-10-hugo/</loc>
+    <lastmod>2020-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yangyang998.github.io/post/2020-02-11-mtj/</loc>
+    <lastmod>2020-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yangyang998.github.io/post/2020-03-13-springboot/</loc>
+    <lastmod>2020-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yangyang998.github.io/vlogs/</loc>
+    <lastmod>2020-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yangyang998.github.io/vlogs/vlogs/</loc>
+    <lastmod>2020-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yangyang998.github.io/top/about/</loc>
   </url>
   
@@ -19,15 +74,7 @@
   </url>
   
   <url>
-    <loc>https://yangyang998.github.io/tags/</loc>
-  </url>
-  
-  <url>
     <loc>https://yangyang998.github.io/top/</loc>
-  </url>
-  
-  <url>
-    <loc>https://yangyang998.github.io/</loc>
   </url>
   
 </urlset>

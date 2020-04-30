@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="hugo搭建博客笔记" />
+    <meta property="og:title" content="hugo搭建博客笔记" />
+    <meta property="twitter:title" content="hugo搭建博客笔记" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="&#39;乐天派&#39;">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Tops-blog</title>
+    <title>hugo搭建博客笔记-blog</title>
 
-    <link rel="canonical" href="/top/">
+    <link rel="canonical" href="/post/2020-01-10-hugo/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -144,14 +144,37 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/index/headbg.jpg')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/index/header03bg.jpg')
+    }
+</style>
+<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>YangYang </h1>
-                    
-		    <span class="subheading">唯有尽力自持，方不致癫狂</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" title="学习笔记">
+                            学习笔记
+                        </a>
+                        
+                    </div>
+                    <h1>hugo搭建博客笔记</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                                YangYang
+                         
+                        on 
+                        Wednesday, March 11, 2020
+                        
+                        
+                        
+                    </span>
                 </div>
             </div>
         </div>
@@ -164,13 +187,127 @@
 <article>
     <div class="container">
         <div class="row">
+
             
             <div class="
-                col-lg-8 col-lg-offset-2
+                col-lg-11 col-lg-offset-1
                 col-md-10 col-md-offset-1
                 post-container">
 
-         	
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#搭建个人博客">搭建个人博客</a></li>
+        <li><a href="#更新博客">更新博客</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                
+                <hr>
+<h2 id="搭建个人博客">搭建个人博客</h2>
+<h5 id="1准备工作">1.准备工作</h5>
+<ul>
+<li>
+<p>一.下载git工具：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+</li>
+<li>
+<p>二.下载<strong>hugo</strong>静态网站生成器：<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></p>
+</li>
+<li>
+<p>三.需要github账户把网站部署到远端，方便通过Inter网访问</p>
+</li>
+<li>
+<p>四.下载模板通过git下载，模板网站：<a href="http://themes.gohugo.io/">http://themes.gohugo.io/</a></p>
+</li>
+</ul>
+<h5 id="2开始">2.开始</h5>
+<ul>
+<li>
+<p>一. 配置hugo，git的环境变量，方便通过cmd命令调用工具</p>
+</li>
+<li>
+<p>二. 通过hugo创建我的第一个项目,命名为<code>myblog</code>，参考<a href="https://gohugo.io/getting-started/quick-start/">官方文档</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">hugo new site myblog
+</code></pre></div><ul>
+<li>创建完过后会生成以下文件</li>
+</ul>
+<pre><code class="language-tree" data-lang="tree">├─archetypes
+├─content
+├─data
+├─layouts
+├─static
+└─themes
+</code></pre></li>
+<li>
+<p>三.通过<code>git clone</code>下载模板到<code>themes</code>文件目录下</p>
+<pre><code class="language-git" data-lang="git">git clone https://github.com/zhaohuabing/hugo-theme-cleanwhite.git
+</code></pre></li>
+<li>
+<p>四.在本地运行hugo服务 <strong>需要更改配置<code>config.toml</code>来显示界面</strong></p>
+<pre><code class="language-hugo" data-lang="hugo">hugo server -t [模板名称] -D
+</code></pre><p>运行:<a href="http://localhost:1313">http://localhost:1313</a></p>
+</li>
+<li>
+<p>五.通过hugo打包发布到github</p>
+<pre><code class="language-hugo" data-lang="hugo">hugo -t=[模板名称] -b=&quot;[仓库地址]&quot; -D
+</code></pre><p>添加到github</p>
+<pre><code>git init
+git add README.md
+git commit -m &quot;first commit&quot;
+git remote add origin https://[github地址]/[仓库地址]
+git push -u origin master
+</code></pre><p>输入用户名，密码后登录github上刷新。</p>
+</li>
+</ul>
+<h2 id="更新博客">更新博客</h2>
+<ul>
+<li>
+<p>第一步：查看当前的git仓库状态</p>
+<pre><code>git status
+</code></pre></li>
+<li>
+<p>第二步：更新全部</p>
+<pre><code>git add *
+</code></pre></li>
+<li>
+<p>第三步：接着输入git commit -m “更新说明”</p>
+<pre><code>git commit -m “更新说明”
+</code></pre></li>
+<li>
+<p>第四步：先git pull,拉取当前分支最新代码（更新本地代码）</p>
+<pre><code>git pull
+</code></pre></li>
+<li>
+<p>第五步：push到远程master分支上（更新GitHub上的代码）</p>
+<pre><code>git push origin master
+</code></pre></li>
+</ul>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/2020-02-11-mtj/" data-toggle="tooltip" data-placement="top" title="mysql tomcat java环境配置">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/2020-04-07-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8A%A5%E8%A1%A8/" data-toggle="tooltip" data-placement="top" title="自定义报表 笔记">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
                 
 <div id="disqus-comment"></div>
 
@@ -179,7 +316,7 @@
             </div>
             
             <div class="
-                col-lg-8 col-lg-offset-2
+                col-lg-11 col-lg-offset-1
                 col-md-10 col-md-offset-1
                 sidebar-container">
 
@@ -193,7 +330,7 @@
                         
                         
                         <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" title="学习笔记">
-                        学习笔记
+                            学习笔记
                         </a>
                         
                         
