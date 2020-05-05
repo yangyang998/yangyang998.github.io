@@ -102,7 +102,7 @@ function run(){
     move(true);
   }
   // console.log(json)
-},3000);
+},5000);
 }
 
 function move(x){

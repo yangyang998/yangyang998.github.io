@@ -60,10 +60,11 @@ html, body {
   }
   .bgi{
     background-image: url('/img/index/backgrond-01.jpg');
+    background-repeat: no-repeat;
   }
 
 audio{
-    z-index: 5;
+    z-index: 4;
     position: absolute;
     bottom: 0;
     opacity: 0.1;
