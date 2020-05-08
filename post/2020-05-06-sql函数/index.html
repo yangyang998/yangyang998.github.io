@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="sql函数整理" />
+    <meta property="og:title" content="sql函数整理" />
+    <meta property="twitter:title" content="sql函数整理" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="&#39;乐天派&#39;">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>blog</title>
+    <title>sql函数整理-blog</title>
 
-    <link rel="canonical" href="/top/about/">
+    <link rel="canonical" href="/post/2020-05-06-sql%E5%87%BD%E6%95%B0/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -144,14 +144,37 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/index/headbg.jpg')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/index/header03bg.jpg')
+    }
+</style>
+<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>YangYang </h1>
-                    
-		    <span class="subheading">唯有尽力自持，方不致癫狂</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" title="学习笔记">
+                            学习笔记
+                        </a>
+                        
+                    </div>
+                    <h1>sql函数整理</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                                YangYang
+                         
+                        on 
+                        Wednesday, May 6, 2020
+                        
+                        
+                        
+                    </span>
                 </div>
             </div>
         </div>
@@ -171,7 +194,59 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-         	<h1 id="about-me">about me!!</h1>
+                
+             
+
+                
+
+                <h3 id="sql日期函数">SQL日期函数</h3>
+<ul>
+<li><strong><code>GETDATE()</code></strong>-获取当前时间</li>
+<li><strong><code>DATEADD(datepart,number,date)</code></strong>-datepart:类型【yyyy，mm，dd】，number：增加的值，date:被增加的对象</li>
+<li><strong><code>DATEDIFF(datepart,startdate,enddate)</code></strong>-datepart:类型【yyyy，mm，dd】，startdate和enddate参数是合法的日期表达式</li>
+<li><strong><code>DATEPART(datepart,date)</code></strong>-类型【yyyy，mm，dd】，date 参数是合法的日期表达式</li>
+</ul>
+<h3 id="数学函数与系统函数">数学函数与系统函数</h3>
+<ul>
+<li><strong><code>RAND()</code></strong>-返回0-100随机数，带参参数相同返回值相同</li>
+<li><strong><code>CEILING()</code></strong>-取正位的大值，小位取小值</li>
+<li><strong><code>FLOOR()</code></strong>-取正位的小值，小位取大值</li>
+<li><strong><code>ROUND()</code></strong>-对数值进行四舍五入</li>
+<li><strong><code>ABS()</code></strong>-取绝对值</li>
+<li><strong><code>POWER(expression,float)</code></strong>-取幂值</li>
+<li><strong><code>SIGN()</code></strong>-正则1，负则-1，0则0</li>
+<li><strong><code>SQRT()</code></strong>-取平方根</li>
+</ul>
+<h3 id="系统函数用于数据类型装换">系统函数用于数据类型装换</h3>
+<ul>
+<li><strong><code>CONVERT(type,expression)</code></strong>-字符类型转换</li>
+<li><strong><code>CONVERT(type,date,expression)</code></strong>-日期格式装换,eg:CONVERT(varchar(100), GETDATE(), 25)</li>
+</ul>
+<h3 id="聚合函数">聚合函数</h3>
+<ul>
+<li><strong><code>SUM()</code></strong>-返回该列数值的总和，空值被忽略，只能用于数字类型的列。</li>
+<li><strong><code>AVG()</code></strong>-返回该列数值的平均值，空值被忽略，只能用于数字类型的列。</li>
+<li><strong><code>MAX()</code></strong>-返回最大值</li>
+<li><strong><code>MIN()</code></strong>-返回最小值
+<ul>
+<li><strong>存在聚合函数，不能同时存在非聚合函数，如需要将非聚合函数放在<em>GROUP BY</em>后。</strong></li>
+</ul>
+</li>
+</ul>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/2020-04-24-%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/" data-toggle="tooltip" data-placement="top" title="不同服务器数据库之间的数据操作">&larr;
+                            上一页</a>
+                    </li>
+                    
+                    
+                </ul>
 
                 
 <div id="disqus-comment"></div>
@@ -189,13 +264,13 @@
                 
                 <section>
                     <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <h5><a href="/tags/">标签</a></h5>
                     <div class="tags">
                         
                         
                         
                         <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" title="学习笔记">
-                        学习笔记
+                            学习笔记
                         </a>
                         
                         

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on YangYang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://yangyang998.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>sql函数整理</title>
+      <link>https://yangyang998.github.io/post/2020-05-06-sql%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yangyang998.github.io/post/2020-05-06-sql%E5%87%BD%E6%95%B0/</guid>
+      <description>SQL日期函数 GETDATE()-获取当前时间 DATEADD(datepart,number,date)-datepart:类型【yyyy，</description>
+    </item>
     
     <item>
       <title>不同服务器数据库之间的数据操作</title>
