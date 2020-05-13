@@ -199,7 +199,18 @@
 
                 
 
-                <h3 id="sql日期函数">SQL日期函数</h3>
+                <h3 id="字符串函数">字符串函数</h3>
+<ul>
+<li><strong><code>CHARINDEX('搜索值','搜索位置',单位)</code></strong>-返回搜索值在搜索位置的地址（int）,单位指开始搜索的位置</li>
+<li><strong><code>LEN()</code></strong>-返回字符串的长度</li>
+<li><strong><code>UPPER()</code></strong>-小写转大写字母</li>
+<li><strong><code>LTRIM()</code></strong>-去掉字符串左边的空格</li>
+<li><strong><code>RTRIM()</code></strong>-去掉字符串右边的空格</li>
+<li><strong><code>RIGHT(example,n)</code></strong>-返回右边的n个字符</li>
+<li><strong><code>LEFT(example,n)</code></strong>-返回左边的n个字符</li>
+<li><strong><code>STUFF(example,int1,int2,string)</code></strong>-从example中的int1位置删除int2的长度替换为string</li>
+</ul>
+<h3 id="sql日期函数">SQL日期函数</h3>
 <ul>
 <li><strong><code>GETDATE()</code></strong>-获取当前时间</li>
 <li><strong><code>DATEADD(datepart,number,date)</code></strong>-datepart:类型【yyyy，mm，dd】，number：增加的值，date:被增加的对象</li>
@@ -233,6 +244,31 @@
 </ul>
 </li>
 </ul>
+<h3 id="标量值函数构建">标量值函数构建</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql">   <span style="color:#6272a4">--Demo
+</span><span style="color:#6272a4"></span>   USE MYDATA
+   <span style="color:#ff79c6">GO</span>
+   <span style="color:#ff79c6">CREATE</span> <span style="color:#ff79c6">FUNCTION</span> ZDY (<span style="color:#ff79c6">@</span>参数 <span style="color:#8be9fd;font-style:italic">VARCHAR</span>(<span style="color:#bd93f9">10</span>),<span style="color:#ff79c6">@</span>参数 <span style="color:#8be9fd;font-style:italic">INT</span>)
+   <span style="color:#ff79c6">RETURNS</span> <span style="color:#8be9fd;font-style:italic">VARCHAR</span>(<span style="color:#bd93f9">50</span>)
+   <span style="color:#ff79c6">AS</span>
+   <span style="color:#ff79c6">BEGIN</span>
+   	<span style="color:#ff79c6">DECLARE</span> <span style="color:#ff79c6">@</span>变量 <span style="color:#8be9fd;font-style:italic">VARCHAR</span>(<span style="color:#bd93f9">100</span>)
+   	<span style="color:#ff79c6">DECLARE</span> <span style="color:#ff79c6">@</span>值 <span style="color:#8be9fd;font-style:italic">INT</span>
+   	WHILE(<span style="color:#ff79c6">@</span>值<span style="color:#ff79c6">&lt;@</span>参数)
+    	<span style="color:#ff79c6">BEGIN</span>
+    		<span style="color:#ff79c6">SET</span> <span style="color:#ff79c6">@</span>变量<span style="color:#ff79c6">=@</span>参数<span style="color:#ff79c6">+</span><span style="color:#f1fa8c">&#39;,&#39;</span><span style="color:#ff79c6">+@</span>参数
+    	<span style="color:#ff79c6">END</span>
+    	<span style="color:#ff79c6">RETURN</span> <span style="color:#ff79c6">@</span>变量
+   <span style="color:#ff79c6">END</span>
+</code></pre></div><p>使用标量值函数：<br>
+SELECT   [标量值函数所在库].[架构dbo].[函数名称]</p>
+<h3 id="存储过程构建">存储过程构建</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql">   <span style="color:#ff79c6">CREATE</span> <span style="color:#ff79c6">PROCEDURE</span> [dbo].[ADDDATABASE]  <span style="color:#ff79c6">@</span>Address <span style="color:#8be9fd;font-style:italic">VARCHAR</span>(<span style="color:#bd93f9">100</span>)
+   <span style="color:#ff79c6">AS</span>
+   <span style="color:#ff79c6">BEGIN</span>
+   <span style="color:#6272a4">--输入需要操作的代码块
+</span><span style="color:#6272a4"></span>   <span style="color:#ff79c6">END</span>
+</code></pre></div><p>EXEC 数据库名称.[架构dbo].[存储过程名称]</p>
 
 
                 
