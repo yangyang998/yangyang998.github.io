@@ -201,7 +201,7 @@
 
                 <h3 id="字符串函数">字符串函数</h3>
 <ul>
-<li><strong><code>CHARINDEX('搜索值','搜索位置',单位)</code></strong>-返回搜索值在搜索位置的地址（int）,单位指开始搜索的位置</li>
+<li><strong><code>CHARINDEX ( expression1 ,expression2 [ , start ] ) </code></strong>-返回搜索值在搜索位置的地址（start）,单位指开始搜索的位置</li>
 <li><strong><code>LEN()</code></strong>-返回字符串的长度</li>
 <li><strong><code>UPPER()</code></strong>-小写转大写字母</li>
 <li><strong><code>LTRIM()</code></strong>-去掉字符串左边的空格</li>
@@ -209,6 +209,8 @@
 <li><strong><code>RIGHT(example,n)</code></strong>-返回右边的n个字符</li>
 <li><strong><code>LEFT(example,n)</code></strong>-返回左边的n个字符</li>
 <li><strong><code>STUFF(example,int1,int2,string)</code></strong>-从example中的int1位置删除int2的长度替换为string</li>
+<li><strong><code>SUBSTRING ( value , start , length )</code></strong>-把value从start处截取length个字符</li>
+<li><strong><code>REPLACE(value1,,value2,value3)</code></strong>-把value1中的value2替换成value3</li>
 </ul>
 <h3 id="sql日期函数">SQL日期函数</h3>
 <ul>

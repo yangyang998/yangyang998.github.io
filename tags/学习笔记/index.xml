@@ -17,7 +17,7 @@
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://yangyang998.github.io/post/2020-05-06-sql%E5%87%BD%E6%95%B0/</guid>
-      <description>字符串函数 CHARINDEX(&#39;搜索值&#39;,&#39;搜索位置&#39;,单位)-返回搜索值在搜索位置的地址（int）,单位指开始搜索的位置 LEN()-返回字</description>
+      <description>字符串函数 CHARINDEX ( expression1 ,expression2 [ , start ] ) -返回搜索值在搜索位置的地址（start）,单位指开始搜索的位置 LEN()-返回字符串的长度 UPPER()-小写</description>
     </item>
     
     <item>
